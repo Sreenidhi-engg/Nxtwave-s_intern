@@ -1,0 +1,635 @@
+html{
+  scroll-behavior:smooth;
+}
+
+/* homepg */
+
+.videobgpg{
+    background-color: #1e293b;
+    background-size:cover;
+    padding:150px;
+}
+.videobgpg_para{
+    margin-left:135px;
+    font-size:15px;
+    font-weight:500;
+    color:white;
+    margin:10px;
+}
+.amazon_img{
+    width:150px;
+    height:50px;
+}
+.line1{
+    color:#f1f5f9;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.line2{
+    color:#a3e635;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.button_claim{
+    padding:8px 24px;
+    font-size:18px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width:400px;
+    height:44px; 
+    font-weight:500;
+    margin:10px;
+    margin-top:225px;
+}
+.button_trailer{
+    padding:5px 24px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius:4px;
+    width:400px;
+    height:44px;
+    background-color:transparent;
+    border-color:#f1f5f9;
+    color:#f1f5f9;
+    margin:10px;
+    font-weight: 500;
+}
+.video_container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+ .video_wrapper {
+  position: relative;
+  width: 90%;           
+  max-width: 900px;      
+  padding-top: 56.25%;    
+}
+.ytvideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.close_button {
+  position: absolute;
+  top: 20px;           
+  right: 50px;          
+  color: grey;
+  background-color: transparent;
+  font-size: 50px;
+  border: none;
+}
+.podcast_line{
+    color:#f1f5f9;
+    font-size:16px;
+    font-weight: 500;
+    margin:10px;
+}
+.strike_img{
+    margin:20px;
+    margin-left:150px;
+    position:absolute;
+}
+.free_word{
+    font-size:20px;
+}  
+  .fade-text {
+    opacity:0; 
+    list-style-type:none;
+    position:absolute; 
+    width:100%; 
+  }
+  .first {
+    animation: fadeInOut 3s 0s forwards;
+  }
+  .second {
+    animation: fadeInOut 3s 3s forwards;
+  }
+  .third {
+    animation: fadeInOut 3s 6s forwards;
+  }
+  .fourth {
+    animation: fadeInOut 3s 9s forwards;
+  }
+  .fifth {
+    animation: fadeInOut 3s 12s forwards;
+  }
+  .sixth {
+    animation: fadeInOut 3s 15s forwards; 
+  }
+  @keyframes fadeInOut {
+    0%, 100% { opacity: 0; }
+    20% { opacity: 1; }
+    80% { opacity: 1; }
+  }
+.videopg_image{
+    height:500px;
+    width:700px;
+    margin-left:150px;
+}
+.carousel_margin{
+  margin-left:200px;
+}
+.speaker_carousel_homepg {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+/* slidinglogos */
+
+.slider_bg{
+  background-color:#0f172a;
+  height:600px;
+}
+.slider_heading{
+  color: #f1f5f9;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom:100px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 51px;
+  font-weight: 640;
+}
+.slider_logo{
+  height:70px;
+  animation:scroll 25s linear infinite;
+  margin-right:10px;
+}
+.overflowing-images{
+  overflow:hidden;
+  width:100%;
+}
+@keyframes scroll{
+  0%{
+    transform:translateX(0);
+  }
+  100%{
+    transform:translateX(-50%);
+  }
+}
+
+/* speaker pg */
+
+.speaker_background{
+  background-color: #1e293b;
+  min-height: 100vh; 
+  background-size: cover;
+}
+.speaker_heading{
+  color: #f1f5f9;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom:50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 51px;
+  font-weight: 640;
+}
+.speaker_para{
+  color:#cbd5e1;
+  text-align:center;
+  font-size:18px;
+  font-weight:400;
+  padding-bottom:50px;
+}
+.topic-buttons-general{
+  display: flex;
+  gap:10px;
+  justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.topic-buttons{
+  background-color: transparent;
+  color:#f8fafc;
+  border-color:#f8fafc;
+  border:1px solid;
+  border-radius:30px;
+  padding:10px;
+  width:120px;
+  height:48px;
+  font-weight: 500;
+}
+.speaker_box{
+  display:flex;
+  gap:20px;
+  justify-content: center;
+}
+.speaker_card{
+  background-color: #334155;
+  height:510px;
+  width:310px;
+  margin-top:50px;
+  margin-bottom: 25px;
+  position: relative; 
+  border-radius: 19px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.speaker_image{
+  width:310px;
+  height:200px;
+  border-top-left-radius:16px;
+  border-top-right-radius:16px;
+}
+.trailer_button{
+  position: absolute;
+  background-color: #60a5fa;
+  color:#fff;
+  border-radius: 19px;
+  border-style:none;
+  width: 100px;
+  height: 32px;
+  font-weight:500px;
+  bottom: 330px;
+  left: 5%;
+}
+.play_button_bg{
+  background-color:white;
+  border-radius:50%;
+  padding:2px;
+  height:15px;
+  width:13px;
+  margin-left:5px;
+  margin-bottom: 2px;
+}
+.speakercard_heading{
+  color:white;
+  font-size: 24px;
+  font-weight: 700;
+  padding:18px;
+}
+.time{
+  display:flex;
+  gap:10px;
+  padding-left:18px;
+  margin:0px;
+}
+.time img{
+  width:25px;
+  height:25px;
+}
+.time p{
+  font-size: 16px;
+  color:#e2e8f0;
+}
+.speaker_name{
+  font-weight:700;
+  color:#cbd5e1;
+  padding-left:18px;
+  margin:0px;
+}
+.speaker_about{
+  color:#f8fafc;
+  font-weight:400;
+  padding-left:18px;
+}
+.learning_button{
+  background-color: transparent;
+  color:#60a5fa;
+  border-style:none;
+  padding-left:18px;
+}
+.learning_button a{
+  text-decoration: none;
+  color:#60a5fa;
+}
+.learning_button a:hover{
+  text-decoration: none;
+  color:#f8fafc;
+}
+.bottom_box{
+  height:150px;
+  padding:50px;
+}
+.claimbtn_speakerspg{
+  margin-bottom: 0px;
+  width:350px;
+  margin-left:550px;
+  margin-right:550px;
+}
+.strikeimg_speakerspg{
+  padding-top:20px;
+  left:52%;
+  position:absolute;
+}
+.speakerspg_line{
+  margin-left:600px;
+  padding-top: 10px;
+  margin-top:0px;
+}
+
+/* feedback pg */
+
+.feedback_background{
+  background-color:#0f172a;
+  background-size:cover;
+  height:100vh;
+}
+.feedback_heading{
+  color: #f1f5f9;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom:50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 51px;
+  font-weight: 640;
+}
+.feedback_number{
+  background-color:#713f1230;
+  border:1px #f59e0b solid;
+  height:50px;
+  width:300px;
+  padding:10px;
+  border-radius:25px;
+  gap:10px;
+  justify-content: center;
+  margin:10px auto;
+}
+.feedback_text{
+  color:#f59e0b;
+  font-size:20px;
+  font-weight:500;
+}
+.emoji{
+  height:30px;
+  width:30px;
+}
+
+.container{
+  margin:70px;
+}
+.outer-box{
+  background-color: #1e293b;
+  border-radius:20px;
+  padding:20px;
+  margin:10px;
+  width:800px;
+  margin-left:180px;
+}
+.img-size{
+  border-radius:50%;
+  width:60px;
+  height:60px;
+}
+.img-text{
+  color: #f1f5f9;
+  margin-left:20px;
+}
+.img-para{
+  color: #f1f5f9;
+  margin-left:20px;
+  margin-top:10px;
+  font-size:24px;
+  font-weight:400;
+}
+.linkedin-link:hover{
+  text-decoration: none;
+}
+.carousel-indicators{
+  left:0;
+  top:auto;
+  bottom:-70px;
+}
+.carousel-control-prev, .carousel-control-next {
+  color: #fff; 
+}
+
+/* free access page */
+
+.access_bg{
+  background-image: url("https://cdn.prod.website-files.com/64362e90abbff481a6d25ce8/64362e90abbff4e843d25fd4_NxtWave's%20Empowering%20Podcast%20Series%20%20to%20Shape%20your%20Dream%20Career.%20(1).png");
+  background-size:cover;
+  height:100vh;
+  padding:100px;
+}
+.access_heading{
+  color: #f1f5f9;
+  padding-top: 70px;
+  padding-bottom:50px;
+  padding-left:100px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 51px;
+  font-weight: 640;
+}
+.access_para{
+  color: #f1f5f9;
+  padding-top:18px;
+  padding-left:15px;
+  font-size:24px;
+  font-weight:400;
+}
+.access_set{
+  padding-left:85px;
+}
+.access_button{
+  padding:8px 24px;
+  font-size:18px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width:400px;
+  height:44px; 
+  font-weight:500;
+  margin:28px;
+  margin-left:100px;
+}
+
+/* claim pg */
+
+.claim_bg{
+  background-color: #0f172a;
+  height:75vh;
+  background-size:cover;
+  padding:50px;
+}
+.claim_heading{
+  color: #f1f5f9;
+  padding-top: 150px;
+  padding-bottom:50px;
+  padding-left:100px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 51px;
+  font-weight: 640;
+}
+.form{
+  padding-left:150px;
+}
+.form_heading{
+  color: #f1f5f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight:500;
+}
+.form_box{
+  background-color: rgb(51, 65, 85);
+  color:#f1f5f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight:500;
+  margin-bottom:20px;
+  padding:10px;
+  border-radius:10px;
+  border-color:grey;
+  border-style:solid;
+  border-width:1px;
+  width:400px;
+}
+.otp_button{
+  padding:8px 24px;
+  font-size:18px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width:400px;
+  height:44px; 
+  font-weight:500;
+  margin-top:30px;
+  border-radius: 10px !important;
+}
+
+.emailverify {
+  display: flex;
+  flex-direction: column; 
+  margin-top: 40px;
+}
+
+.emailverify .form_box {
+  margin-bottom: 10px; 
+}
+
+/* note pg */
+
+.note{
+  background-color:#1e293b;
+  height:15vh;
+  background-size:cover;
+  color: #f1f5f9;
+  padding-top:40px;
+  padding-left:130px;
+  font-size:18px;
+  font-weight:400;
+  margin:0px;
+}
+
+/* contact pg */
+
+.contact_bg{
+  background-color: #0f172a;
+  height: 85vh;
+  background-size:cover;
+  margin:0px;
+  padding-left:200px;
+}
+.nxtwave_logo{
+  padding-top:100px;
+}
+.reach_us{
+  color: #5a7184;
+  padding-top:40px;
+  font-size:18px;
+  font-weight:700;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.mail_link{
+  opacity: .7;
+  color: #959ead;
+  font-size: 18px;
+  font-weight: 400;
+  padding-left:10px;
+}
+.mail:hover{
+  text-decoration: none;
+}
+
+.quick_links{
+  color: #5a7184;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size:18px;
+  font-weight:700;
+  padding-top:100px;
+  padding-left:250px;
+}
+.quicklink_list{
+  list-style: none;
+  padding-top: 20px;
+}
+.quicklink_list a{
+  color: #959ead;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size:18px;
+  opacity: .7;
+  list-style: none !important;
+}
+.quicklink_list a:hover{
+  cursor: pointer;
+  color:white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  opacity:1;
+}
+.firstcolumn{
+  padding-left: 250px;
+}
+
+.payment_methods{
+  color: #5a7184;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size:18px;
+  font-weight:700;
+  padding-top:100px;
+  padding-left:150px;
+}
+.payment_images{
+  display:flex;
+  padding-left:150px;
+  padding-top:20px;
+  gap:30px;
+}
+
+.address{
+  color: #959ead;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size:18px;
+  opacity: .7;
+  padding-top:50px;
+  padding-left:150px;
+  gap:10px;
+}
+.pin{
+  width:30px;
+  height:60px;
+}
+.add_text{
+  padding-top:15px;
+}
+
+.line{
+  background-color:#959ead;
+  height:1px;
+  margin-top:32px;
+  margin-bottom:32px;
+  margin-right:200px;
+  opacity: .2;
+}
+
+.icons{
+  display:flex;
+  gap:15px;
+}
+
+.policies{
+  display:flex;
+  list-style: none;
+  gap:20px;
+  padding-left:200px;
+}
+.policieslink{
+  color:#959ead;
+  text-decoration: none;
+}
+.policieslink a{
+  color:#959ead;
+  transition: color 0.3s ease;
+}
+.policieslink a:hover{
+  color:white;
+  text-decoration: none;
+  opacity:1;
+}

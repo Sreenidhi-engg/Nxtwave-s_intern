@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nxtwave's Empowering Podcast</title>
+    <link rel="stylesheet" href="nw.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+<body>
+
+
+
+    <div id='sectionvideopg'>
+        <div class="videobgpg d-flex flex-row">
+            <div>
+                <div class="videobgpg_heading">
+                    <img src="https://cdn.prod.website-files.com/64362e90abbff481a6d25ce8/64362e90abbff4d11fd25fa9_Frame%201000003044%20(2).svg"/>
+                    <p class="videobgpg_para"><style>
+                        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+                    </style>by NxtWave</p>
+                </div>
+                <ul class="scrolling_heading">
+                    <li class="fade-text first"> <h1 class="line1">A Sr. Recruiter at<img class="amazon_img" src="https://cdn.prod.website-files.com/64362e90abbff481a6d25ce8/64362e90abbff483f9d25f89_Frame%201000002924%20(1).svg"></h1>
+                        <h1 class="line1">Teaches You About</h1>
+                        <h1 class="line2">Acing Interviews</h1></li>
+                    <li class="fade-text second"> <h1 class="line1">A CEO at<img class="amazon_img" src="https://cdn.prod.website-files.com/64362e90abbff481a6d25ce8/64362e90abbff4e82fd25f85_Msys.svg"></h1>
+                        <h1 class="line1">Teaches You About</h1>
+                        <h1 class="line2">Entrepreneurship</h1></li>
+                    <li class="fade-text third"><h1 class="line1">A Sr.Manager at<img class="amazon_img" src="https://cdn.prod.website-files.com/64362e90abbff481a6d25ce8/64362e90abbff44006d25f7f_Frame%201000002982.svg"></h1>
+                        <h1 class="line1">Teaches You About</h1>
+                        <h1 class="line2">Product Management</h1></li>
+                    <li class="fade-text fourth"> <h1 class="line1">A Lead at<img class="amazon_img" src="https://cdn.prod.website-files.com/64362e90abbff481a6d25ce8/64362e90abbff4511cd25f81_SuperK.svg"></h1>
+                        <h1 class="line1">Teaches You About</h1>
+                        <h1 class="line2">Career Designing</h1></li>
+                    <li class="fade-text fifth"> <h1 class="line1">A Manager at<img class="amazon_img" src="https://cdn.prod.website-files.com/64362e90abbff481a6d25ce8/64362e90abbff441edd25f5e_Uber.svg"></h1>
+                        <h1 class="line1">Teaches You About</h1>
+                        <h1 class="line2">Programming</h1></li>
+                    <li class="fade-text sixth"> <h1 class="line1">A CTO at<img class="amazon_img" src="https://cdn.prod.website-files.com/64362e90abbff481a6d25ce8/64362e90abbff492bed25fa5_logo.27a7f72e%20(1)%201.svg"></h1>
+                        <h1 class="line1">Teaches You About</h1>
+                        <h1 class="line2">Leadership</h1></li>
+                </ul>
+
+                <script>
+                    setInterval(() => {
+                    document.querySelector('.first').style.animation = 'none'; 
+                    document.querySelector('.first').offsetHeight; 
+                    document.querySelector('.first').style.animation = 'fadeInOut 3s 0s forwards'; 
+                    }, 18 * 1000); 
+                </script>
+                
+
+                <div class="d-flex flex-column">
+                    <button type="button" onclick="scrollToForm()" class="button_claim btn btn-primary">Claim Free Access</button>   
+                    <button class="button_trailer" onclick="showVideo('video')">Watch Trailer</button>
+                    <div id="video" class="video_container" style="display: none;">
+                        <button class="close_button" onclick="hideVideo('video')">×</button>
+                        <div class="video_wrapper">
+                            <iframe class="ytvideo"
+                                src="https://www.youtube.com/embed/MxF43cZxquo"
+                                title="Trailer"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                    <script>
+                        function showVideo(videoId) {
+                        const videoContainer = document.getElementById(videoId);
+                        videoContainer.style.display = 'flex';
+                        videoContainer.previousElementSibling.style.display = 'none';
+                    }
+
+                    function hideVideo(videoId) {
+                    const videoContainer = document.getElementById(videoId);
+                    const iframe = videoContainer.querySelector('.ytvideo');
+
+                    videoContainer.style.display = 'none';
+                    videoContainer.previousElementSibling.style.display = 'inline-block';
+
+                    iframe.src = iframe.src;  // Reset the video to stop playback
+                }
+                    </script>
+
+                </div>
+                <img class="strike_img" src="https://cdn.prod.website-files.com/64362e90abbff481a6d25ce8/64362e90abbff450f5d25f9f_Vector%201.png">
+                <p class="podcast_line">Get  1  podcast  worth  &#x20B9;2000 <span class="line2 free_word">Free</span></p>
+            </div>
+            <div class="carousel_margin">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/pritesh.png" class="speaker_carousel_homepg d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/siva-ghani-reddy.png" class="speaker_carousel_homepg d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/sanjay.png" class="speaker_carousel_homepg d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/sandeep.png" class="speaker_carousel_homepg d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/shiva-kumar.png" class="speaker_carousel_homepg d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id='sectionslidinglogos'>
+        <div class="slider_bg">
+            <div>
+                <h2 class="slider_heading">Our Speakers Come From <br> Your Dream Companies</h2>
+            </div>
+            <div class="logos">
+                <div class="overflowing-images">
+                    <img class="slider_logo" src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/our-speaker-come-from-section/company-scroll-strip-row-1.png"/>
+                    <br><br><br>
+                    <img class="slider_logo" src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/our-speaker-come-from-section/company-scroll-strip-row-2.png"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id='sectionspeakerpg'>
+        <div class="speaker_background">
+            <h2 class="speaker_heading">A Rare Collection of Insider <br> Knowledge, All Yours!</h2>
+            <p class="speaker_para"><style>
+                @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+            </style>All secrets uncovered. Exclusive insights, Timely Advice and Personal Growth <br> Journeys straight from the tech experts.</p>
+            <div class="topic-buttons-general">
+                <button class="topic-buttons" onclick="changeColor(this)" id="btnTrending">🔥 Trending</button>
+                <button class="topic-buttons" onclick="changeColor(this)" id="btnAll">All</button>
+                <button class="topic-buttons" onclick="changeColor(this)" id="btnTech">Tech</button>
+                <button class="topic-buttons" onclick="changeColor(this)" id="btnCareer">Career</button>
+                <button class="topic-buttons" onclick="changeColor(this)" id="btnCXO">CXO</button>
+                <button class="topic-buttons" onclick="changeColor(this)" id="btnProductivity">Productivity</button>
+                <button class="topic-buttons" onclick="changeColor(this)" id="btnGSOC">GSOC</button>
+                <button class="topic-buttons" onclick="changeColor(this)" id="btnPanel">Panel</button>
+            </div>
+            <script>
+                function changeColor(button) {
+                    const buttons = document.querySelectorAll('.topic-buttons');
+                    buttons.forEach(btn => {
+                        btn.style.backgroundColor = '';
+                        btn.style.color = '';
+                        btn.style.border = '';
+                        btn.style.outline = 'none';
+                    });
+                    button.style.backgroundColor = '#f8fafc';
+                    button.style.color = '#1e293b';
+                    button.style.border = 'none';
+                    button.style.outline = 'none';
+                }
+            </script>
+
+            <div id="sectionTrending">
+                <div class="speaker_box d-flex flex-row">
+                    <div>
+                        <div class="speaker_card">
+                            <div>
+                                <img class="speaker_image" src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/sandeep.png"/>
+                                <button class="trailer_button" onclick="showVideo('video1')">Trailer
+                                    <img class="play_button_bg" src="https://cdn.prod.website-files.com/64362e90abbff481a6d25ce8/64533d2ddcff965e7b00edbb_Vector.png"/>
+                                </button>
+
+                                <div id="video1" class="video_container" style="display: none;">
+                                    <button class="close_button" onclick="hideVideo('video1')">×</button>
+                                    <div class="video_wrapper">
+                                        <iframe class="ytvideo"
+                                            src="https://www.youtube.com/embed/YDfL0TfKS3M"
+                                            title="Trailer"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            referrerpolicy="strict-origin-when-cross-origin"
+                                            allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                </div>
+                                <script>
+                                    function showVideo(videoId) {
+                                    const videoContainer = document.getElementById(videoId);
+                                    videoContainer.style.display = 'flex';
+                                    videoContainer.previousElementSibling.style.display = 'none';
+                                }
+            
+                                function hideVideo(videoId) {
+                                const videoContainer = document.getElementById(videoId);
+                                const iframe = videoContainer.querySelector('.ytvideo');
+            
+                                videoContainer.style.display = 'none';
+                                videoContainer.previousElementSibling.style.display = 'inline-block';
+            
+                                iframe.src = iframe.src;  // Reset the video to stop playback
+                            }
+                                </script>
+                            </div>
+                            <div>
+                                <p class="speakercard_heading">An Engineering Manager at Uber Teaches Programming</p>
+                                <div class="time">
+                                    <img src="https://cdn.prod.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png"/>
+                                    <p>45:17 Mins</p>
+                                </div>
+                                <p class="speaker_name">Sandeep Gorthi</p>
+                                <p class="speaker_about">Engineering Manager at Uber</p>
+                                <button class="learning_button"><a href="https://www.youtube.com/watch?v=MxF43cZxquo" target="_blank">
+                                    What You will Learn
+                                </a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="speaker_card">
+                            <div>
+                                <img class="speaker_image" src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/pritesh.png"/>
+                                <button class="trailer_button" onclick="showVideo('video2')">Trailer
+                                    <img class="play_button_bg" src="https://cdn.prod.website-files.com/64362e90abbff481a6d25ce8/64533d2ddcff965e7b00edbb_Vector.png"/>
+                                </button>
+
+                                <div id="video2" class="video_container" style="display: none;">
+                                    <button class="close_button" onclick="hideVideo('video2')">×</button>
+                                    <div class="video_wrapper">
+                                        <iframe class="ytvideo"
+                                            src="https://www.youtube.com/embed/pDpwlapFss8"
+                                            title="Trailer"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            referrerpolicy="strict-origin-when-cross-origin"
+                                            allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                </div>
+                                <script>
+                                    function showVideo(videoId) {
+                                    const videoContainer = document.getElementById(videoId);
+                                    videoContainer.style.display = 'flex';
+                                    videoContainer.previousElementSibling.style.display = 'none';
+                                }
+            
+                                function hideVideo(videoId) {
+                                const videoContainer = document.getElementById(videoId);
+                                const iframe = videoContainer.querySelector('.ytvideo');
+            
+                                videoContainer.style.display = 'none';
+                                videoContainer.previousElementSibling.style.display = 'inline-block';
+            
+                                iframe.src = iframe.src;  // Reset the video to stop playback
+                            }
+                                </script>
+                            </div>
+                            <div>
+                                <p class="speakercard_heading">A Sr. Recruiter at Amazon Teaches Acing Interviews</p>
+                                <div class="time">
+                                    <img src="https://cdn.prod.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png"/>
+                                    <p>41:07 Mins</p>
+                                </div>
+                                <p class="speaker_name">Pritesh Malode</p>
+                                <p class="speaker_about">Senior Recruiter at Amazon</p>
+                                <button class="learning_button"><a href="https://www.youtube.com/watch?v=MxF43cZxquo" target="_blank">
+                                    What You will Learn
+                                </a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="speaker_card">
+                            <div>
+                                <img class="speaker_image" src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/sanjay.png"/>
+                                <button class="trailer_button" onclick="showVideo('video3')">Trailer
+                                    <img class="play_button_bg" src="https://cdn.prod.website-files.com/64362e90abbff481a6d25ce8/64533d2ddcff965e7b00edbb_Vector.png"/>
+                                </button>
+
+                                <div id="video3" class="video_container" style="display: none;">
+                                    <button class="close_button" onclick="hideVideo('video3')">×</button>
+                                    <div class="video_wrapper">
+                                        <iframe class="ytvideo"
+                                            src="https://www.youtube.com/embed/BKe0tIy4u0k"
+                                            title="Trailer"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            referrerpolicy="strict-origin-when-cross-origin"
+                                            allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                </div>
+                                <script>
+                                    function showVideo(videoId) {
+                                    const videoContainer = document.getElementById(videoId);
+                                    videoContainer.style.display = 'flex';
+                                    videoContainer.previousElementSibling.style.display = 'none';
+                                }
+            
+                                function hideVideo(videoId) {
+                                const videoContainer = document.getElementById(videoId);
+                                const iframe = videoContainer.querySelector('.ytvideo');
+            
+                                videoContainer.style.display = 'none';
+                                videoContainer.previousElementSibling.style.display = 'inline-block';
+            
+                                iframe.src = iframe.src;  // Reset the video to stop playback
+                            }
+                                </script>
+                            </div>
+                            <div>
+                                <p class="speakercard_heading">A Global CEO Teaches Mastering Time Management</p>
+                                <div class="time">
+                                    <img src="https://cdn.prod.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png"/>
+                                    <p>56:32 Mins</p>
+                                </div>
+                                <p class="speaker_name">Sanjay Sehgal</p>
+                                <p class="speaker_about">Chairman & CEO at Msys Technologies</p>
+                                <button class="learning_button"><a href="https://www.youtube.com/watch?v=MxF43cZxquo" target="_blank">
+                                    What You will Learn
+                                </a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="sectionAll">
+                <div class="speaker_box d-flex flex-row">
+                    <div>
+                        <div class="speaker_card">
+                            <div>
+                                <img class="speaker_image" src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/goutam.png"/>
+                            </div>
+                            <div>
+                                <p class="speakercard_heading">An Engineer at Meta Teaches You About Designing Technology</p>
+                                <div class="time">
+                                    <img src="https://cdn.prod.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png"/>
+                                    <p>50:46 Mins</p>
+                                </div>
+                                <p class="speaker_name">Goutam Reddy</p>
+                                <p class="speaker_about">Platform Security Engineer Meta USA</p>
+                                <button class="learning_button"><a href="https://www.youtube.com/watch?v=MxF43cZxquo" target="_blank">
+                                    What You will Learn
+                                </a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="speaker_card">
+                            <div>
+                                <img class="speaker_image" src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/ashok-vardhan.png"/>
+                            </div>
+                            <div>
+                                <p class="speakercard_heading">Software Engineer at Google Teaches Google Mindset</p>
+                                <div class="time">
+                                    <img src="https://cdn.prod.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png"/>
+                                    <p>1:23:53 Mins</p>
+                                </div>
+                                <p class="speaker_name">Ashok Vardhan Viswanadha</p>
+                                <p class="speaker_about">Staff Software Engineer at Google</p>
+                                <button class="learning_button"><a href="https://www.youtube.com/watch?v=MxF43cZxquo" target="_blank">
+                                    What You will Learn
+                                </a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="speaker_card">
+                            <div>
+                                <img class="speaker_image" src="https://nxtwave.imgix.net/ccbp-website/podcast/rare-collection-of-insider-knowledge/sri-vidhya.png?auto=format,compress&q=80"/>
+                            </div>
+                            <div>
+                                <p class="speakercard_heading">A Scientist at Apple Teaches You About Machine Learning</p>
+                                <div class="time">
+                                    <img src="https://cdn.prod.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png"/>
+                                    <p>41:27 Mins</p>
+                                </div>
+                                <p class="speaker_name">Sri Vidya Pranavi</p>
+                                <p class="speaker_about">Machine Learning Scientist at Apple</p>
+                                <button class="learning_button"><a href="https://www.youtube.com/watch?v=MxF43cZxquo" target="_blank">
+                                    What You will Learn
+                                </a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="sectionTech">
+                <div class="speaker_box d-flex flex-row">
+                    <div>
+                        <div class="speaker_card">
+                            <div>
+                                <img class="speaker_image" src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/architha-nagelli.png"/>
+                            </div>
+                            <div>
+                                <p class="speakercard_heading">A Lead Engineer at Meesho Busts Popular Coding Myths</p>
+                                <div class="time">
+                                    <img src="https://cdn.prod.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png"/>
+                                    <p>35:04 Mins</p>
+                                </div>
+                                <p class="speaker_name">Architha Nagelli</p>
+                                <p class="speaker_about">Lead Software Engineer, Meesho</p>
+                                <button class="learning_button"><a href="https://www.youtube.com/watch?v=MxF43cZxquo" target="_blank">
+                                    What You will Learn
+                                </a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="speaker_card">
+                            <div>
+                                <img class="speaker_image" src="https://nxtwave.imgix.net/ccbp-website/podcast/rare-collection-of-insider-knowledge/priyatham-bollimpalli.png?auto=format,compress&q=80"/>
+                            </div>
+                            <div>
+                                <p class="speakercard_heading">A Data Scientist at Microsoft Teaches you About Data Science</p>
+                                <div class="time">
+                                    <img src="https://cdn.prod.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png"/>
+                                    <p>1:07:43 Mins</p>
+                                </div>
+                                <p class="speaker_name">Priyatham Bollimpalli</p>
+                                <p class="speaker_about">Data & Applied Scientist II at Microsoft,</p>
+                                <button class="learning_button"><a href="https://www.youtube.com/watch?v=MxF43cZxquo" target="_blank">
+                                    What You will Learn
+                                </a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="speaker_card">
+                            <div>
+                                <img class="speaker_image" src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/sandeep.png"/>
+                                
+                            </div>
+                            <div>
+                                <p class="speakercard_heading">An Engineering Manager at Uber Teaches Programming</p>
+                                <div class="time">
+                                    <img src="https://cdn.prod.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png"/>
+                                    <p>45:17 Mins</p>
+                                </div>
+                                <p class="speaker_name">Sandeep Gorthi</p>
+                                <p class="speaker_about">Engineering Manager at Uber</p>
+                                <button class="learning_button"><a href="https://www.youtube.com/watch?v=MxF43cZxquo" target="_blank">
+                                    What You will Learn
+                                </a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="sectionCareer">
+                <div class="speaker_box d-flex flex-row">
+                    <div>
+                        <div class="speaker_card">
+                            <div>
+                                <img class="speaker_image" src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/deepa-wadhwani.png"/>
+                                
+                            </div>
+                            <div>
+                                <p class="speakercard_heading">HR Lead of ADP Teaches Mastering Interviews</p><br>
+                                <div class="time">
+                                    <img src="https://cdn.prod.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png"/>
+                                    <p>31:09 Mins</p>
+                                </div>
+                                <p class="speaker_name">Deepa Wadhwani</p>
+                                <p class="speaker_about">Director - Lead Acquisition of ADP</p>
+                                <button class="learning_button"><a href="https://www.youtube.com/watch?v=MxF43cZxquo" target="_blank">
+                                    What You will Learn
+                                </a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="speaker_card">
+                            <div>
+                                <img class="speaker_image" src="https://nxtwave.imgix.net/ccbp-website/podcast/rare-collection-of-insider-knowledge/hari-tn.png?auto=format,compress&q=80"/>
+                                
+                            </div>
+                            <div>
+                                <p class="speakercard_heading">The HR Head of Big Basket Teaches You About Building a Career</p>
+                                <div class="time">
+                                    <img src="https://cdn.prod.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png"/>
+                                    <p>43:19 Mins</p>
+                                </div>
+                                <p class="speaker_name">Hari TN</p>
+                                <p class="speaker_about">Head HR, Big Basket</p>
+                                <button class="learning_button"><a href="https://www.youtube.com/watch?v=MxF43cZxquo" target="_blank">
+                                    What You will Learn
+                                </a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="speaker_card">
+                            <div>
+                                <img class="speaker_image" src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/siva-ghani-reddy.png"/>
+                                
+                            </div>
+                            <div>
+                                <p class="speakercard_heading">A Sr. Manager at Microsoft Teaches  Product Management</p>
+                                <div class="time">
+                                    <img src="https://cdn.prod.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png"/>
+                                    <p>01:01:13 Mins</p>
+                                </div>
+                                <p class="speaker_name">Siva Ghani Reddy</p>
+                                <p class="speaker_about">Senior Product Manager at Microsoft</p>
+                                <button class="learning_button"><a href="https://www.youtube.com/watch?v=MxF43cZxquo" target="_blank">
+                                    What You will Learn
+                                </a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="sectionCXO">
+                <div class="speaker_box d-flex flex-row">
+                    <div>
+                        <div class="speaker_card">
+                            <div>
+                                <img class="speaker_image" src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/shiva-kumar.png"/>
+                                
+                            </div>
+                            <div>
+                                <p class="speakercard_heading">A Chief Technology Officer at Slice Teaches  Leadership</p>
+                                <div class="time">
+                                    <img src="https://cdn.prod.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png"/>
+                                    <p>01:06:52 Mins</p>
+                                </div>
+                                <p class="speaker_name">Shiva Kumar</p>
+                                <p class="speaker_about">Chief Technology Officer at Slice</p>
+                                <button class="learning_button"><a href="https://www.youtube.com/watch?v=MxF43cZxquo" target="_blank">
+                                    What You will Learn
+                                </a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="speaker_card">
+                            <div>
+                                <img class="speaker_image" src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/sanjay-sehgal.png"/>
+                                
+                            </div>
+                            <div>
+                                <p class="speakercard_heading">A CEO at Msys Teaches Innovation & Entrepreneurship</p>
+                                <div class="time">
+                                    <img src="https://cdn.prod.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png"/>
+                                    <p>49:07 Mins</p>
+                                </div>
+                                <p class="speaker_name">Sanjay Sehgal</p>
+                                <p class="speaker_about">Chairman & CEO at Msys Technologies</p>
+                                <button class="learning_button"><a href="https://www.youtube.com/watch?v=MxF43cZxquo" target="_blank">
+                                    What You will Learn
+                                </a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="speaker_card">
+                            <div>
+                                <img class="speaker_image" src="https://nxtwave.imgix.net/ccbp-website/podcast/rare-collection-of-insider-knowledge/rakesh-mishra.png?auto=format,compress&q=80"/>
+                                
+                            </div>
+                            <div>
+                                <p class="speakercard_heading">The Co-founder of Uhana Teaches You About 5G</p>
+                                <div class="time">
+                                    <img src="https://cdn.prod.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png"/>
+                                    <p>48:49 Mins</p>
+                                </div>
+                                <p class="speaker_name">Rakesh Mishra</p>
+                                <p class="speaker_about">Co-founder of Uhana (Acquired by VMware), PhD at Stanford University</p>
+                                <button class="learning_button"><a href="https://www.youtube.com/watch?v=MxF43cZxquo" target="_blank">
+                                    What You will Learn
+                                </a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="sectionProductivity">
+                <div class="speaker_box d-flex flex-row">
+                    <div>
+                        <div class="speaker_card">
+                            <div>
+                                <img class="speaker_image" src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/kiran.png"/>
+                                
+                            </div>
+                            <div>
+                                <p class="speakercard_heading">An Engineer at Google Teaches Thriving in Tech & Life</p>
+                                <div class="time">
+                                    <img src="https://cdn.prod.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png"/>
+                                    <p>54:27 Mins</p>
+                                </div>
+                                <p class="speaker_name">Sai Kiran Gorthi</p>
+                                <p class="speaker_about">Software Engineer at Google</p>
+                                <button class="learning_button"><a href="https://www.youtube.com/watch?v=MxF43cZxquo" target="_blank">
+                                    What You will Learn
+                                </a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="speaker_card">
+                            <div>
+                                <img class="speaker_image" src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/sanjay-sehgal.png"/>
+                                
+                            </div>
+                            <div>
+                                <p class="speakercard_heading">A Global CEO Teaches Mastering Time Management</p>
+                                <div class="time">
+                                    <img src="https://cdn.prod.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png"/>
+                                    <p>56:32 Mins</p>
+                                </div>
+                                <p class="speaker_name">Sanjay Sehgal</p>
+                                <p class="speaker_about">Chairman & CEO at Msys Technologies</p>
+                                <button class="learning_button"><a href="https://www.youtube.com/watch?v=MxF43cZxquo" target="_blank">
+                                    What You will Learn
+                                </a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="speaker_card">
+                            <div>
+                                <img class="speaker_image" src="https://cdn.prod.website-files.com/64362e90abbff481a6d25ce8/6690c3b977eb17ab2fe49ddb_krishna-raghavan-thumbnail.webp"/>
+                                
+                            </div>
+                            <div>
+                                <p class="speakercard_heading">Discover what the Top 1% Profession</p><br>
+                                <div class="time">
+                                    <img src="https://cdn.prod.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png"/>
+                                    <p>41:23 mins</p>
+                                </div>
+                                <p class="speaker_name">Krishna Ragha</p>
+                                <p class="speaker_about">People and Tech Leader</p>
+                                <button class="learning_button"><a href="https://www.youtube.com/watch?v=MxF43cZxquo" target="_blank">
+                                    What You will Learn
+                                </a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="sectionGSOC">
+                <div class="speaker_box d-flex flex-row">
+                    <div>
+                        <div class="speaker_card">
+                            <div>
+                                <img class="speaker_image" src="https://nxtwave.imgix.net/ccbp-website/podcast/rare-collection-of-insider-knowledge/rahul-garg.png?auto=format,compress&q=80"/>
+                                
+                            </div>
+                            <div>
+                                <p class="speakercard_heading">GSOC Alumuni Teaches You About Cracking GSOC</p>
+                                <div class="time">
+                                    <img src="https://cdn.prod.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png"/>
+                                    <p>46 Mins</p>
+                                </div>
+                                <p class="speaker_name">Rahul Garg</p>
+                                <p class="speaker_about">IIIT Hyderabad, GSOC Alumnus</p>
+                                <button class="learning_button"><a href="https://www.youtube.com/watch?v=MxF43cZxquo" target="_blank">
+                                    What You will Learn
+                                </a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="speaker_card">
+                            <div>
+                                <img class="speaker_image" src="https://nxtwave.imgix.net/ccbp-website/podcast/rare-collection-of-insider-knowledge/nirmal-manoj.png?auto=format,compress&q=80"/>
+                                
+                            </div>
+                            <div>
+                                <p class="speakercard_heading">GSOC Alumuni teaches You About the GSOC Process</p>
+                                <div class="time">
+                                    <img src="https://cdn.prod.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png"/>
+                                    <p>46 Mins</p>
+                                </div>
+                                <p class="speaker_name">Nirmal Manoj</p>
+                                <p class="speaker_about">IIIT Hyderabad, GSOC Alumnus</p>
+                                <button class="learning_button"><a href="https://www.youtube.com/watch?v=MxF43cZxquo" target="_blank">
+                                    What You will Learn
+                                </a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="speaker_card">
+                            <div>
+                                <img class="speaker_image" src="https://nxtwave.imgix.net/ccbp-website/podcast/rare-collection-of-insider-knowledge/sivay-lamba.png?auto=format,compress&q=80"/>
+                                
+                            </div>
+                            <div>
+                                <p class="speakercard_heading">GSOC Mentor Teaches You About Success Strategies for GSOCn</p>
+                                <div class="time">
+                                    <img src="https://cdn.prod.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png"/>
+                                    <p>47 Mins</p>
+                                </div>
+                                <p class="speaker_name">Mr. Shivay Lamba</p>
+                                <p class="speaker_about">CTO, DarkHorse</p>
+                                <button class="learning_button"><a href="https://www.youtube.com/watch?v=MxF43cZxquo" target="_blank">
+                                    What You will Learn
+                                </a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="sectionPanel">
+                <div class="speaker_box d-flex flex-row">
+                    <div>
+                        <div class="speaker_card">
+                            <div>
+                                <img class="speaker_image" src="https://nxtwave.imgix.net/ccbp-website/podcast/rare-collection-of-insider-knowledge/panel-2.png?auto=format,compress&q=80"/>
+                                
+                            </div>
+                            <div>
+                                <p class="speakercard_heading">MAANG Experts Teach You About Securing Dream Jobs</p>
+                                <div class="time">
+                                    <img src="https://cdn.prod.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png"/>
+                                    <p>1:00:11 Mins</p>
+                                </div>
+                                <p class="speaker_name">Expert Panel</p>
+                                <button class="learning_button"><a href="https://www.youtube.com/watch?v=MxF43cZxquo" target="_blank">
+                                    What You will Learn
+                                </a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="speaker_card">
+                            <div>
+                                <img class="speaker_image" src="https://nxtwave.imgix.net/ccbp-website/podcast/rare-collection-of-insider-knowledge/panel-1.png?auto=format,compress&q=80"/>
+                                
+                            </div>
+                            <div>
+                                <p class="speakercard_heading">HR Leaders Teach
+                                    You About Acing Interviews</p><br>
+                                <div class="time">
+                                    <img src="https://cdn.prod.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png"/>
+                                    <p>1:09:54 Mins</p>
+                                </div>
+                                <p class="speaker_name">Expert Panel</p>
+                                <button class="learning_button"><a href="https://www.youtube.com/watch?v=MxF43cZxquo" target="_blank">
+                                    What You will Learn
+                                </a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="speaker_card">
+                            <div>
+                                <img class="speaker_image" src="https://nxtwave.imgix.net/ccbp-website/podcast/rare-collection-of-insider-knowledge/panel-3.png?auto=format,compress&q=80"/>
+                                
+                            </div>
+                            <div>
+                                <p class="speakercard_heading">Expert Engineers Teach You About 4.0 Technologies</p>
+                                <div class="time">
+                                    <img src="https://cdn.prod.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png"/>
+                                    <p>1:00:11 Mins</p>
+                                </div>
+                                <p class="speaker_name">Expert Panel</p>
+                                <button class="learning_button"><a href="https://www.youtube.com/watch?v=MxF43cZxquo" target="_blank">
+                                    What You will Learn
+                                </a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                // Get the buttons and sections
+                const btnTrending = document.getElementById('btnTrending');
+                const btnAll = document.getElementById('btnAll');
+                const btnTech = document.getElementById('btnTech');
+                const btnCareer = document.getElementById('btnCareer');
+                const btnCXO = document.getElementById('btnCXO');
+                const btnProductivity = document.getElementById('btnProductivity');
+                const btnGSOC = document.getElementById('btnGSOC');
+                const btnPanel = document.getElementById('btnPanel');
+
+                const sectionTrending = document.getElementById('sectionTrending');
+                const sectionAll = document.getElementById('sectionAll');
+                const sectionTech = document.getElementById('sectionTech');
+                const sectionCareer = document.getElementById('sectionCareer');
+                const sectionCXO = document.getElementById('sectionCXO'); // Corrected case
+                const sectionProductivity = document.getElementById('sectionProductivity'); // Corrected case
+                const sectionGSOC= document.getElementById('sectionGSOC'); // Corrected case
+                const sectionPanel= document.getElementById('sectionPanel');
+
+                
+               // Set default state to show the Trending section
+                sectionTrending.style.display = 'block'; // Show trending section by default
+                sectionAll.style.display = 'none'; // Hide all other sections
+                sectionTech.style.display = 'none';
+                sectionCareer.style.display = 'none';
+                sectionCXO.style.display = 'none';
+                sectionProductivity.style.display = 'none';
+                sectionGSOC.style.display = 'none';
+                sectionPanel.style.display = 'none';
+
+                // Add event listeners for buttons to switch sections
+                btnTrending.addEventListener('click', function() {
+                    sectionTrending.style.display = 'block'; // Show trending section
+                    sectionAll.style.display = 'none';      // Hide all section
+                    sectionTech.style.display = 'none';
+                    sectionCareer.style.display = 'none';
+                    sectionCXO.style.display = 'none';
+                    sectionProductivity.style.display = 'none';
+                    sectionGSOC.style.display = 'none';
+                    sectionPanel.style.display = 'none';
+                    setActiveButton(btnTrending);
+                });
+            
+                btnAll.addEventListener('click', function() {
+                    sectionTrending.style.display = 'none'; // Hide trending section
+                    sectionAll.style.display = 'block';    // Show all section
+                    sectionTech.style.display = 'none';
+                    sectionCareer.style.display = 'none';
+                    sectionCXO.style.display = 'none';      // Hide all section
+                    sectionProductivity.style.display = 'none';
+                    sectionGSOC.style.display = 'none';
+                    sectionPanel.style.display = 'none';
+                });
+                btnTech.addEventListener('click', function() {
+                    sectionTrending.style.display = 'none'; // Hide trending section
+                    sectionAll.style.display = 'none';    // Show all section
+                    sectionTech.style.display = 'block';
+                    sectionCareer.style.display = 'none';
+                    sectionCXO.style.display = 'none';      // Hide all section
+                    sectionProductivity.style.display = 'none';
+                    sectionGSOC.style.display = 'none';
+                    sectionPanel.style.display = 'none';
+                });
+                btnCareer.addEventListener('click', function() {
+                    sectionTrending.style.display = 'none'; // Hide trending section
+                    sectionAll.style.display = 'none';    // Show all section
+                    sectionTech.style.display = 'none';
+                    sectionCareer.style.display = 'block';
+                    sectionCXO.style.display = 'none';      // Hide all section
+                    sectionProductivity.style.display = 'none';
+                    sectionGSOC.style.display = 'none';
+                    sectionPanel.style.display = 'none';
+                });
+                btnCXO.addEventListener('click', function() {
+                    sectionTrending.style.display = 'none'; // Hide trending section
+                    sectionAll.style.display = 'none';    // Show all section
+                    sectionTech.style.display = 'none';
+                    sectionCareer.style.display = 'none';
+                    sectionCXO.style.display = 'block';      // Hide all section
+                    sectionProductivity.style.display = 'none';
+                    sectionGSOC.style.display = 'none';
+                    sectionPanel.style.display = 'none';
+                });
+                btnProductivity.addEventListener('click', function() {
+                    sectionTrending.style.display = 'none'; // Hide trending section
+                    sectionAll.style.display = 'none';    // Show all section
+                    sectionTech.style.display = 'none';
+                    sectionCareer.style.display = 'none';
+                    sectionCXO.style.display = 'none';      // Hide all section
+                    sectionProductivity.style.display = 'block';
+                    sectionGSOC.style.display = 'none';
+                    sectionPanel.style.display = 'none';
+                });
+                btnGSOC.addEventListener('click', function() {
+                    sectionTrending.style.display = 'none'; // Hide trending section
+                    sectionAll.style.display = 'none';    // Show all section
+                    sectionTech.style.display = 'none';
+                    sectionCareer.style.display = 'none';
+                    sectionCXO.style.display = 'none';      // Hide all section
+                    sectionProductivity.style.display = 'none';
+                    sectionGSOC.style.display = 'block';
+                    sectionPanel.style.display = 'none';
+                });
+                btnPanel.addEventListener('click', function() {
+                    sectionTrending.style.display = 'none'; // Hide trending section
+                    sectionAll.style.display = 'none';    // Show all section
+                    sectionTech.style.display = 'none';
+                    sectionCareer.style.display = 'none';
+                    sectionCXO.style.display = 'none';      // Hide all section
+                    sectionProductivity.style.display = 'none';
+                    sectionGSOC.style.display = 'none';
+                    sectionPanel.style.display = 'block';
+                });
+            </script>
+
+            <div class="bottom_box">
+                <button type="button" onclick="scrollToForm()" class="claimbtn_speakerspg btn btn-primary">Claim Free Access</button>
+                <img class="strikeimg_speakerspg" src="https://cdn.prod.website-files.com/64362e90abbff481a6d25ce8/64362e90abbff450f5d25f9f_Vector%201.png">
+                <p class="podcast_line speakerspg_line">Get  1  podcast  worth  &#x20B9;2000 <span class="line2 free_word">Free</span></p>
+            </div>
+            
+        </div>
+    </div>
+
+
+
+    <div id="sectionfeedbackpg">
+        <div class="feedback_background">
+            <h2 class="feedback_heading">Students Say, <br> It’s a Blockbuster!</h2>
+            <div class="d-flex flex-row justify-content-center feedback_number">
+                <img class="emoji" src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/student-testimonials/emoji-icon.png"/>
+                <p class="feedback_text"><style>
+                    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+                </style>25000+ Happy Feedbacks</p>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                              </ol>
+                              <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="outer-box">
+                                            <div class="d-flex flex-row"><img class="img-size" src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/student-testimonials/rahul-gunturi-linkedin-profile-pic.png">
+                                                <div class="img-text">
+                                                    <h3>Rahul Guturii</h3>
+                                                    <h6>Fellow at CCBP 4.0 academy | NxtWave</h6>
+                                                </div>
+                                                </div>
+                                                <p class="img-para"><style>
+                                                    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+                                                </style>The podcast with Sanjay Sehgal, CEO of MSys Technologies, is the best and incredibly valuable. I took nine pages of notes and ... 
+                                                    
+                                                    <a class="linkedin-link" href="https://www.linkedin.com/posts/rrahulguturii_ceo-nxtwave-ccbp-activity-6969659189593858048-r6DB/?utm_source=share&utm_medium=member_desktop">Read More on Linkedin</a>
+                                                        
+                                                </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="outer-box">
+                                            <div class="d-flex flex-row"><img class="img-size" src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/student-testimonials/sai-rohith-linkedin-profile-pic.png">
+                                                <div class="img-text">
+                                                    <h3>Sai Rohith</h3>
+                                                    <h6>Fellow at CCBP 4.0 academy | NxtWave</h6>
+                                                </div>
+                                                </div>
+                                                <p class="img-para"><style>
+                                                    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+                                                </style>As a CCBP 4.0 Academy student, I feel very lucky that I get access to the knowledge of top-notch experts with ease. Thanks to NxtWave ...
+                                                    
+                                                <a class="linkedin-link" href="https://www.linkedin.com/posts/sairohithg_nxtwave-ccbp-ccbpian-activity-6961426917317124096-OU8N/?utm_source=share&utm_medium=member_desktop">Read More on Linkedin</a>
+                                                        
+                                                </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="outer-box">
+                                            <div class="d-flex flex-row"><img class="img-size" src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/student-testimonials/neha-panakanapalli-linkedin-profile-pic.png">
+                                                <div class="img-text">
+                                                    <h3>Neha Panakanapalli</h3>
+                                                    <h6>Fellow at CCBP 4.0 academy | NxtWave</h6>
+                                                </div>
+                                                </div>
+                                                <p class="img-para"><style>
+                                                    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+                                                </style>These podcasts are really special! I started listening from a student perspective and ended up learning the product manager's perspective ...
+                                                    
+                                                        <a class="linkedin-link" href="https://www.linkedin.com/posts/neha-panakanapalli-074210247_podcast-language-programming-activity-7007598726974238720-PZje/?utm_source=share&utm_medium=member_desktop">Read More on Linkedin</a>
+                                                        
+                                                </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="outer-box">
+                                            <div class="d-flex flex-row"><img class="img-size" src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/student-testimonials/rupesh-reddy-loka-linkedin-profile-pic.png">
+                                                <div class="img-text">
+                                                    <h3>Rupesh Reddy Loka</h3>
+                                                    <h6>Fellow at CCBP 4.0 academy | NxtWave</h6>
+                                                </div>
+                                                </div>
+                                                <p class="img-para"><style>
+                                                    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+                                                </style>After Gowtham sir's podcast, I got really motivated with some of his insights and experiences and also noted some points! He enlightened ...
+                                                    
+                                                        <a class="linkedin-link" href="https://www.linkedin.com/posts/rupesh-reddy-loka_podcast-gowthamreddy-nxtwave-activity-6982297960650850304-uCVU/?utm_source=share&utm_medium=member_desktop">Read More on Linkedin</a>
+                                                        
+                                                </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="outer-box">
+                                            <div class="d-flex flex-row"><img class="img-size" src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/student-testimonials/gunda-vamshi-linkedin-profile-pic.png">
+                                            <div class="img-text">
+                                                <h3>Gunda Vamshi</h3>
+                                                <h6>Fellow at CCBP 4.0 academy | NxtWave</h6>
+                                            </div>
+                                            </div>
+                                                <p class="img-para"><style>
+                                                    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+                                                </style>Very excellent and learnt many insights from the podcast. I really thank to Archita ma'am for delivering such great insights in the podcast. ...
+                                                    
+                                                        <a class="linkedin-link" href="https://www.linkedin.com/posts/gunda-vamshi-034137216_ccbp-ccbpian-ccbpacademy-activity-6997442879845543936-x8PF/?utm_source=share&utm_medium=member_desktop">Read More on Linkedin</a>
+                                                        
+                                                </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="outer-box">
+                                            <div class="d-flex flex-row"><img class="img-size" src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/student-testimonials/narasimha-naidu-talari-linkedin-profile-pic.png">
+                                            <div class="img-text">
+                                                <h3>Narasimha Naidu Talari</h3>
+                                                <h6>Fellow at CCBP 4.0 academy | NxtWave</h6>
+                                            </div>
+                                            </div>
+                                                <p class="img-para"><style>
+                                                    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+                                                </style>Ma'am answered all our student questions and shared her experience on how to build the best career in IT! It is very useful to me , Thank you ...
+                                                    
+                                                        <a class="linkedin-link" href="https://www.linkedin.com/posts/narasimha-naidu-talari-553622248_podcast-nxtwaveteam-experience-activity-6997446557964939264-rjPM/?utm_source=share&utm_medium=member_desktop">Read More on Linkedin</a>
+                                                        
+                                                </p>
+                                        </div>                                    
+                                    </div>
+                                </div>
+                              </div>
+                              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                              </a>
+                              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                              </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div id="sectionfreeaccess">
+        <div class="access_bg">
+            <h1 class="access_heading">NxtWave's Empowering Podcast Series <br> to Shape your Dream Career</h1>
+            <div class="d-flex flex-row access_set">
+                <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/nxtwaves-empowering-podcast-section/mic-logo.svg"/>
+                <p class="access_para"><style>
+                    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+                </style>100+ Podcasts</p>
+            </div><br>
+            <div class="d-flex flex-row access_set">
+                <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/nxtwaves-empowering-podcast-section/rupee-logo.svg"/>
+                <p class="access_para"><style>
+                    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+                </style>Each worth ₹2000/-</p>
+            </div><br>
+            <div class="d-flex flex-row access_set">
+                <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/nxtwaves-empowering-podcast-section/flame-logo.svg"/>
+                <p class="access_para"><style>
+                    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+                </style>FREE for NxtWave Academy students</p>
+            </div>
+            <button type="button" onclick="scrollToForm()" class="access_button btn btn-primary">Claim Free Access</button>   
+
+            <script>
+                function scrollToForm() {
+                    document.getElementById("sectionclaim").scrollIntoView({ behavior: 'smooth' });
+                }
+            </script>
+
+
+        </div>
+    </div>
+
+
+
+    <div id="sectionclaim">
+        <div class="claim_bg">
+            <div class="d-flex flex-row">
+                <div>
+                    <h1 class="claim_heading">Claim Your <br> Free Access to a Podcast</h1>
+                </div>
+                <div class="form d-flex flex-column">
+                    <label class="form_heading">Name</label>
+                    <input class="form_box" type="text" id="name" placeholder="Your Name">
+                    <div class="email">
+                        <label class="form_heading">Email</label>
+                        <br>
+                        <input class="form_box" type="email" id="email" placeholder="Enter an Email Id">
+                    </div>
+                    <button class="otp_button btn btn-primary" onclick="sendOTP()">Get OTP</button>
+                    <div class="emailverify" style="display: none;">
+                        <input class="form_box" type="text" id="otp_inp" placeholder="Enter the OTP">
+                        <button class="otp_button btn btn-primary" id="otp-btn">Verify</button>
+                    </div>
+                </div>
+                <script>
+                    let otp_val; 
+    
+                    function sendOTP() {
+                        const email = document.getElementById('email');
+                        const otpverify = document.getElementsByClassName('emailverify')[0];
+    
+                        
+                        otp_val = Math.floor(Math.random() * 10000);
+                        let emailbody = `<h2>Your OTP is </h2>${otp_val}`;
+                        
+                        
+                        Email.send({
+                            SecureToken: "6205863b-b1aa-4050-8a6f-faa638bacf26",
+                            To: email.value,
+                            From: "sreenidhinall2047@gmail.com",
+                            Subject: "Email OTP",
+                            Body: emailbody,
+                        }).then(message => {
+                            if (message === "OK") {
+                                alert("OTP sent to your email " + email.value);
+                                otpverify.style.display = "flex"; 
+                            }
+                        });
+                    }
+    
+                    document.getElementById('otp-btn').addEventListener('click', () => {
+                        const otp_inp = document.getElementById('otp_inp');
+    
+                        // Verify OTP
+                        if (otp_inp.value == otp_val) {
+                            alert("Email address verified...");
+                        } else {
+                            alert("Invalid OTP");
+                        }
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="sectionnote">
+        <p class="note"><style>
+            @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+        </style>* The speaker profiles are as on the recorded date</p>
+    </div>
+
+
+
+    <div id="sectioncontactpg">
+        <div class="contact_bg">
+            <div class="d-flex flex-row">
+                <div id="mail">
+                    <a href="https://www.ccbp.in/?_gl=1*12iiduj*_ga*MjExNjE3MTUxMi4xNjg4NDgyMzYx*_ga_VNJELL2WMV*MTczMTIzODYxMi4yMC4xLjE3MzEyMzkxNjMuNjAuMC4w">
+                        <img class="nxtwave_logo" src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/Nxtwave_White_logo.svg">
+                    </a>
+                    <div class="reach_us">
+                        <p><style>
+                            @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+                        </style>Reach Us</p>
+                        <a href="mailto:support@nxtwave.tech" class="mail">
+                            <div class="d-flex flex-row">
+                                <img src="https://cdn.prod.website-files.com/5fa61cbbf0d432b3230f62b1/61f3c91504378bb16eca4973_mail-icon.svg">
+                                <div class="mail_link">support@nxtwave.tech</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div id="quick-links">
+                    <div>
+                        <h3 class="quick_links">Quick Links</h3>
+                        <div class="d-flex flex-row">
+                            <div>
+                                <ul class="quicklink_list firstcolumn">
+                                    <li><a href="https://www.ccbp.in/?_gl=1*x9wu2h*_ga*MjExNjE3MTUxMi4xNjg4NDgyMzYx*_ga_VNJELL2WMV*MTczMTIzODYxMi4yMC4xLjE3MzEyMzk3NjguNTcuMC4w" target="_blank">Home</a></li>
+                                    <li><a href="https://www.ccbp.in/academy?_gl=1*z10v9g*_ga*MjExNjE3MTUxMi4xNjg4NDgyMzYx*_ga_VNJELL2WMV*MTczMTIzODYxMi4yMC4xLjE3MzEyNDEwMTcuNTUuMC4w" target="_blank">Academy</a></li>
+                                    <li><a href="https://www.ccbp.in/intensive?_gl=1*151wd57*_ga*MjExNjE3MTUxMi4xNjg4NDgyMzYx*_ga_VNJELL2WMV*MTczMTIzODYxMi4yMC4xLjE3MzEyNDEwNDEuMzEuMC4w" target="_blank">Intensive</a></li>
+                                    <li><a href="https://www.ccbp.in/hire?_gl=1*1ovxx5i*_ga*MjExNjE3MTUxMi4xNjg4NDgyMzYx*_ga_VNJELL2WMV*MTczMTIzODYxMi4yMC4xLjE3MzEyNDEwNTIuMjAuMC4w" target="_blank">Hire with us</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul class="quicklink_list">
+                                    <li><a href="https://www.ccbp.in/contact-us?_gl=1*th0coe*_ga*MjExNjE3MTUxMi4xNjg4NDgyMzYx*_ga_VNJELL2WMV*MTczMTIzODYxMi4yMC4xLjE3MzEyNDEwNzUuNTkuMC4w" target="_blank">Contact Us</a></li>
+                                    <li><a href="https://www.ccbp.in/about-us">About Us</a></li>
+                                    <li><a href="https://www.ccbp.in/reviews?_gl=1*476wtl*_ga*MjExNjE3MTUxMi4xNjg4NDgyMzYx*_ga_VNJELL2WMV*MTczMTIzODYxMi4yMC4xLjE3MzEyNDI3NzIuMTYuMC4w" target="_blank">Reviews</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="payment">
+                    <h3 class="payment_methods">Payment Methods</h3>
+                    <div>
+                        <div class="payment_images">
+                            <img src="https://cdn.prod.website-files.com/5fa61cbbf0d432b3230f62b1/61f3c93dfbc8568fcb27e556_visa-icon.svg">
+                            <img src="https://cdn.prod.website-files.com/5fa61cbbf0d432b3230f62b1/61f3c976a29a435d3fc17f27_mastercard-icon.svg">
+                            <img src="https://cdn.prod.website-files.com/5fa61cbbf0d432b3230f62b1/61f3fcf36619310922216dcb_payment-method-icon3.svg">
+                        </div>
+                        <div class="payment_images">
+                            <img src="https://cdn.prod.website-files.com/5fa61cbbf0d432b3230f62b1/61f3fcf46ba93fa0919d5828_Razor-pay-icon.svg">
+                            <img src="https://cdn.prod.website-files.com/5fa61cbbf0d432b3230f62b1/61f3fcf34a02bed6c7dbc750_upi-icon.svg">
+                            <img src="https://cdn.prod.website-files.com/5fa61cbbf0d432b3230f62b1/61f3fd566ba93f145d9d5b57_rupay-icon.svg">
+                        </div>
+                    </div>
+                    <div class="address d-flex flex-row">
+                        <img class="pin" src="https://cdn.prod.website-files.com/5fa61cbbf0d432b3230f62b1/618dff87c4047e7681214d33_location%20on.svg">
+                        <p class="add_text">NxtWave, WeWork <br>
+                            Rajapushpa Summit,<br> 
+                            Nanakramguda Rd, Financial <br>
+                            District, Manikonda Jagir, <br>
+                            Telangana 500032
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="line">
+
+            <div class="d-flex flex-row">
+                <div class="icons">
+                    <a href="https://www.facebook.com/NxtWave-106729994530632/" target="_blank">
+                        <img src="https://cdn.prod.website-files.com/5fa61cbbf0d432b3230f62b1/61f3fd520d11331f5f3b46ef_facebook-icon.svg">
+                    </a>
+                    <a href="https://www.instagram.com/ccbp_nxtwave/" target="_blank">
+                        <img src="https://cdn.prod.website-files.com/5fa61cbbf0d432b3230f62b1/61f3fe609dc6ce25f2f7078f_instgram-icon.svg">
+                    </a>
+                    <a id="footer-twitter-profile-link" href="https://twitter.com/nxtwave_tech" target="_blank">
+                        <img src="https://cdn.prod.website-files.com/5fa61cbbf0d432b3230f62b1/61f400cc41af69932df92c8a_twitterimage.svg">
+                    </a>
+                    <a id="footer-linkedin-profile-link" href="https://www.linkedin.com/company/nxtwavetech" target="_blank">
+                        <img src="https://cdn.prod.website-files.com/5fa61cbbf0d432b3230f62b1/61f3fe1a40dc31c249e1ab99_linkedin-icon.svg">
+                    </a>
+                    <a id="footer-youtube-profile-link" href="https://www.youtube.com/c/NxtWaveTech" target="_blank">
+                        <img src="https://cdn.prod.website-files.com/5fa61cbbf0d432b3230f62b1/62384993d97ad72405dee8d2_Frame%2031%20(1).svg">
+                    </a>
+                </div>
+                <div>
+                    <ul class="policies">
+                        <li class="policieslink"><a href="https://www.ccbp.in/privacy-policy?_gl=1*1p39zij*_ga*MjExNjE3MTUxMi4xNjg4NDgyMzYx*_ga_VNJELL2WMV*MTczMTI0ODMxNy4yMS4xLjE3MzEyNDgzMjguNDkuMC4w" target="_blank">Privacy Policy</a></li>
+                        <li class="policieslink"><a href="https://www.ccbp.in/cookie-policy?_gl=1*19oa1pq*_ga*MjExNjE3MTUxMi4xNjg4NDgyMzYx*_ga_VNJELL2WMV*MTczMTI0ODMxNy4yMS4xLjE3MzEyNDg0MzIuNDkuMC4w" target="_blank">Cookie Policy</a></li>
+                        <li class="policieslink"><a href="https://www.ccbp.in/terms-and-conditions?_gl=1*aqk0nz*_ga*MjExNjE3MTUxMi4xNjg4NDgyMzYx*_ga_VNJELL2WMV*MTczMTI0ODMxNy4yMS4xLjE3MzEyNDg0NjAuMjEuMC4w" target="_blank">Terms and Conditions</a></li>
+                        <li class="policieslink"><a href="https://www.ccbp.in/grievance-redressal?_gl=1*1ot0iid*_ga*MjExNjE3MTUxMi4xNjg4NDgyMzYx*_ga_VNJELL2WMV*MTczMTI0ODMxNy4yMS4xLjE3MzEyNDg1MDEuNDAuMC4w" target="_blank">Grievance Redressal</a></li>
+                        <li class="policieslink"><a href="https://www.ccbp.in/corporate-information?_gl=1*120p8vy*_ga*MjExNjE3MTUxMi4xNjg4NDgyMzYx*_ga_VNJELL2WMV*MTczMTI0ODMxNy4yMS4xLjE3MzEyNDg1MTcuMjQuMC4w" target="_blank">Corporate Information</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
